@@ -1,0 +1,126 @@
+.marcas {
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.marcasTitle {
+    padding-top: 30px;
+    color: #3D9342;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 60px 0;
+  position: relative;
+}
+
+.logos::before, .logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) , #fff);
+}
+
+.logos::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) , #fff);
+}
+
+.logos:hover .marcasImagens {
+  display: inline-block;
+}
+
+.marcasImagens {
+  display: inline-block;
+  animation: 12s slide infinite linear;
+}
+
+.marcasImagens img {
+  height: 50px;
+  margin: 0 40px;
+}
+
+
+.containerMarcas {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .containerMarcas .center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+  }
+  
+  .containerMarcas .btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #3D9342;
+    outline: none;
+    transition: 1s ease-in-out;
+    border-radius: 5px;
+  }
+  
+  .containerMarcas svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #333;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+    border-radius: 5px;
+  }
+  
+  .containerMarcas .btn:hover {
+    transition: 1s ease-in-out;
+    background: #3D9342;
+  }
+  
+  .containerMarcas .btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .containerMarcas .btn span {
+    color: #3D9342;
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: capitalize;
+  }
+
+  .containerMarcas .btn:hover span {
+    color: #fff;
+  }
+  

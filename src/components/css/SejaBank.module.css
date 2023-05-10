@@ -1,0 +1,33 @@
+.sejaBank {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/sejaBankFundo.png);
+    position: relative;
+}
+
+.sejaBank img {
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-52%);
+    z-index: 10;
+}
+
+.sejaBank h1 {
+    position: absolute;
+    font-size: 128px;
+    color: #fff;
+    top: 149px;
+    left: 228px;
+    text-transform: uppercase;
+}
+
+.sejaBank h2 {
+    position: absolute;
+    font-size: 128px;
+    color: #fff;
+    top: 149px;
+    right: 58px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --caret1: 85px;
+    --caret2: 125px;
+    --caret3: 115px;
+    --fundo: #333;
+    --verde: #3D9342;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    background-color: var(--fundo);
+}
+
+header img {
+    margin-left: 43px;
+}
+
+.middleHeader {
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+
+.listElements {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .25s all;
+}
+
+.listElements:nth-child(2) {
+    margin: 0 40px;
+}
+
+.listElements:hover {
+    transition: .25s all;
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 10px #fff;
+}
+
+.caret1 {
+    position: absolute;
+    margin-left: var(--caret1);
+    margin-top: 8px;
+    transition: .25s all;
+}
+
+.caret2 {
+    position: absolute;
+    margin-left: var(--caret2);
+    margin-top: 8px;
+    transition: .25s all;
+}
+
+.caret3 {
+    position: absolute;
+    margin-left: var(--caret3);
+    margin-top: 8px;
+    transition: .25s all;
+}
+
+.listElements:hover .caret1 {
+    margin-left: calc(var(--caret1) + 10px);
+    transition: .25s all;
+}
+
+.listElements:hover .caret2 {
+    margin-left: calc(var(--caret2) + 10px);
+    transition: .25s all;
+}
+
+.listElements:hover .caret3 {
+    margin-left: calc(var(--caret3) + 10px);
+    transition: .25s all;
+}
+
+.buttons {
+    margin-right: 43px;
+    display: flex;
+    font-size: 20px;
+}
+
+.buttons p {
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .25s all;
+    transition-delay: .25s;
+    border-radius: 20px;
+}
+
+.buttons p:hover {
+    background-color: var(--verde); 
+    border-radius: 20px;
+    transition: .25s all;
+}
+
+.buttons p::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background-color: #333;
+    transition: .5s ease-in-out;
+    transform: scaleY(1);
+    transition-delay: 0.5s;
+}
+
+.buttons p:hover::before {
+    transform: scaleY(0);
+}
+
+.buttons p::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background-color: #333;
+    transition: .5s ease-in-out;
+    transform: scaleX(1);
+}
+
+.buttons p:hover::after {
+    transform: scaleX(0);
+}
+
+.buttons p span {
+    position: relative;
+    z-index: 3;
+}

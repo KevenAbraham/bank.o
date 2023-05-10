@@ -1,0 +1,144 @@
+.info {
+    height: 609px;
+    width: 100%;
+}
+
+.cartaoCelular {
+    position: relative;
+    float: left;
+}
+
+.textAreaInfo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 140px;
+}
+
+.boxArea div {cursor: pointer;}
+
+.textAreaInfo h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 65px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.infoDesc {
+    margin: auto;
+    width: 457px;
+    font-size: 32px;
+    text-align: center; 
+    padding-bottom: 34px;
+} 
+
+.boxArea {
+    display: flex;
+    margin: auto;
+}
+
+.boxInfoPix {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.3);
+    cursor: default;
+    transition: .25s ease-in-out;
+}
+
+.boxInfoPix:hover {
+    transform: scale(1.1);
+    background-color: #3D9342;
+    color: #fff;
+}
+
+.boxInfoPix:hover .pixImg {
+    transition: .25s ease-in-out;
+    background-image: url(../img/WhitePix.png);
+}
+
+.boxInfoBoleto {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.3);
+    cursor: default;
+    transition: .25s ease-in-out;
+    margin: 0 9px;
+}
+
+.boxInfoBoleto:hover {
+    transform: scale(1.1);
+    background-color: #3D9342;
+    color: #fff;
+}
+
+.boxInfoBoleto:hover .boletoImg {
+    transition: .5s ease-in-out;
+    background-image: url(../img/whiteBoleto.png);
+}
+
+.boxInfoTransacao {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.3);
+    cursor: default;
+    transition: .5s ease-in-out;
+}
+
+.boxInfoTransacao:hover {
+    transform: scale(1.1);
+    background-color: #3D9342;
+    color: #fff;
+}
+
+.boxInfoTransacao:hover .transacaoImg {
+    transition: .5s ease-in-out;
+    background-image: url(../img/whiteTransacao.png);
+}
+
+.pixImg {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/pix.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.boletoImg {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/boleto.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.transacaoImg {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 110px;
+    height: 100px;
+    background-image: url(../img/transacao.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.boxArea p {
+    margin: auto;
+    width: 135px;
+    font-size: 26px;
+    text-align: center;
+}
